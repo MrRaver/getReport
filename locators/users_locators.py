@@ -61,20 +61,24 @@ class Users:
     CHOICE_FIRST_VARIANT=(By.XPATH,"/html/body/div[1]/div/div/group-select-modal/modal-wnd/div[2]/body-block/div/div/div/group-select/table/tbody/tr/td/div/div/ul/li[6]/a")
     SAVE_INUSERS=(By.XPATH,"/html/body/div[1]/div/div/group-select-modal/modal-wnd/div[3]/ul/li[2]/button") #Сохранить вложенного пользователя
     TEST_ROLE_GR1=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div[3]/div/group-panel/panel/div/div[2]/panel-body/group-list/ul/li[3]") #Тестовая роль GR1
+    TEST_ROLE_GR2=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div[3]/div/group-panel/panel/div/div[2]/panel-body/group-list/ul/li[4]") #Тестовая роль GR2
+    TEST_SCHEMA=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div[3]/div/group-panel/panel/div/div[2]/panel-body/group-list/ul/li[1]/span/a[1]/i")
 
     OFF_URL=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div[2]/div/div/div/div[2]/custom-grid-simple/custom-grid/div[1]/div[2]/table/tbody/tr[6]/td[8]/ng-html-include/div") #Выключаем приглашенный по ссылке
     TEXT_ERROR=(By.XPATH,"/html/body/div[1]/div/div/alert-modal/div/alert-slider/table/tbody/tr/td[2]/p[1]") #Текст ошибки
     ENTER_BY_URL=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div[2]/div/div/div/div[2]/custom-grid-simple/custom-grid/div[1]/div[2]/table/tbody/tr[6]/td[9]/ng-html-include/button") #Войти
+    PASSWORD_NOT_MATHES=(By.XPATH,"/html/body/div[1]/div/div/registration-modal/modal-wnd/div[2]/body-block/panel/div/div[2]/panel-body/account-edit-form/div/div/div[1]/div/div[2]/account-data/form/div[9]/div/span") #Текст что пароли не совпадают
+    NOT_NAMES=(By.XPATH,"/html/body/div[1]/div/div/registration-modal/modal-wnd/div[2]/body-block/panel/div/div[2]/panel-body/account-edit-form/div/div/div[1]/div/div[2]/account-data/form/div[5]/div/span") #Без имени
+    SETTING_STATUS=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div/div[2]/div/div[1]/div/table/tbody/tr[2]/td[5]/div/div[1]/div[3]/a/i") #Настройки бизнес процессы
+    CHER_READY=(By.XPATH,"/html/body/div[1]/div/div/div[2]/div/table/tbody/tr[1]/td[3]/label/input") #Чекбокс черновик готов
+    SAVE_BUSINESS_STATUS=(By.XPATH,"/html/body/div[1]/div/div/div[3]/button[1]") #Сохранение бизнес процусса
+    TREE_STATUS=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div/div[1]/ul/li[3]/a") #Дерево статусов
+    YES_SAVE=(By.XPATH,"/html/body/div[1]/div/div/div[2]/button[1]") #принять сохранение
+    EDIT_ORDER=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div[3]/div[3]/div/div[2]/div/div/div/div[2]/table/tbody/tr[3]/td/div/div/div[4]/a") #редактировать таблицы заказ
+    EYES=(By.XPATH,"/html/body/div/div/div[3]/div/div/div/div[3]/div/group-panel/panel/div/div[2]/panel-body/group-list/ul/li[4]/span/a[2]/i") #глаз
 
-
-
-
-
-
-
-
-
-
-
+    CHOICE_EL_GR2=(By.XPATH,"/html/body/div[1]/div/div/group-select-modal/modal-wnd/div[2]/body-block/div/div/div/group-select/table/tbody/tr/td/div/div/button") #выбор элемента
+    PLACEHOLDER_GR2=(By.XPATH,"/html/body/div[1]/div/div/group-select-modal/modal-wnd/div[2]/body-block/div/div/div/group-select/table/tbody/tr/td/div/div/ul/li[4]/div/input")# Место для имени
+    SAVE_GR2=(By.XPATH,"/html/body/div[1]/div/div/group-select-modal/modal-wnd/div[3]/ul/li[2]/button")#Сохранить наследование
 
 
