@@ -40,6 +40,19 @@ class TestRoleUser:
         text= user.off_users()
         print(text)
 
+    def test_GR12_password_test(self, driver):  # 7.Пользователи (Несовпадающие пароли)
+        user = User(driver, "http://193.124.117.158/#/login")
+        user.open()
+        erorr=user.GR12_password_test()
+        print(erorr)
+    def test_empty_name(self, driver):  # 8.Пользователи (Отсутствует Имя пользователя)
+        user = User(driver, "http://193.124.117.158/#/login")
+        user.open()
+        erorr=user.GR12_name_test()
+        print(erorr)
+        time.sleep(3)
+
+
     def test_add_additional_role_GR1(self,driver): #11 Добавление роли в таблицу
         user=User(driver,"http://193.124.117.158/#/login")
         user.open()
@@ -50,4 +63,15 @@ class TestRoleUser:
         user = User(driver, "http://193.124.117.158/#/login")
         user.open()
         user.delete_role_GR1()
+        time.sleep(3)
+
+    def test_tree_status(self, driver):  # 13.Дерево статусов
+        user = User(driver, "http://193.124.117.158/#/login")
+        user.open()
+        user.tree_status()
+        time.sleep(3)
+    def test_role2_inheritance(self,driver): #14. Наследование
+        user = User(driver, "http://193.124.117.158/#/login")
+        user.open()
+        user.role2_inheritance()
         time.sleep(3)
