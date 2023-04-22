@@ -46,6 +46,7 @@ class User(BasePage):
         self.element_is_visible(user.PASSWORD_USER2).send_keys("12345")
         self.element_is_visible(user.SAVE_USERS).click()
 
+
     def reg_by_email(self): #3 Регистрация пользователя по почте
         self.autorization()
         self.element_is_visible(user.USERS).click()
@@ -191,6 +192,86 @@ class User(BasePage):
         self.element_is_visible(user.ROLES).click()
         self.element_is_visible(user.TEST_ROLE_GR2).click()
         self.element_is_visible(user.TEST_SCHEMA).click()
+
+    def give_rigth(self):  # 1. Выдача прав пользователям
+        self.autorization()
+        self.element_is_visible(user.EDIT_ADDITIONAL).click()
+        self.element_is_visible(user.THE_RIGHT).click()
+        self.element_is_visible(user.ADD_THE_RIGHT).click()
+        self.element_is_visible(user.NAMES_ROLE).click()
+        self.element_is_visible(user.NAMES_ROLE_ENTER).click()
+        names = self.element_is_visible(user.INPUT_NAMES_ROLE_ENTER)
+        names.send_keys("GR1")
+        names.send_keys(Keys.ENTER)
+        self.element_is_visible(user.SEES).click()
+        self.element_is_visible(user.ALL_FIELDS).click()
+        self.element_is_visible(user.CHECKBOX_ALL_STATUS).click()
+        self.element_is_visible(user.EDITS).click()
+        self.element_is_visible(user.ADD_FIELD).click()
+        self.element_is_visible(user.EDITS_EDIT).click()
+        self.element_is_visible(user.DRAFT).click()
+        self.element_is_visible(user.READ_TWO).click()
+        self.element_is_visible(user.READ_FOUR).click()
+        self.element_is_visible(user.CONFIRM_ONE).click()
+        self.element_is_visible(user.CONFIRM_THREE).click()
+        self.element_is_visible(user.CONFIRM_FIVE).click()
+        self.element_is_visible(user.SAVE_EDIT).click()
+        self.element_is_visible(user.BUSINESS_PROCESS).click()
+        self.element_is_visible(user.EDITS_PROCESS).click()
+        self.element_is_visible(user.DRAFT_READY).click()
+        self.element_is_visible(user.SAVE_EDITS_PROCESS).click()
+        self.element_is_visible(user.ADD_THE_RIGHT).click()
+        self.element_is_visible(user.NAMES_ROLE2).click()
+        self.element_is_visible(user.NAMES_ROLE_ENTER2).click()
+        names = self.element_is_visible(user.INPUT_NAMES_ROLE_ENTER)
+        names.send_keys("GR2")
+        names.send_keys(Keys.ENTER)
+        self.element_is_visible(user.SEES2).click()
+        self.element_is_visible(user.ALL_FIELDS2).click()
+        self.element_is_visible(user.CHECKBOX_ALL_STATUS2).click()
+        self.element_is_visible(user.EDITS2).click()
+        self.element_is_visible(user.ADD_FIELD2).click()
+        self.element_is_visible(user.EDIT_FIELD2).click()
+        self.element_is_visible(user.BUSINESS_PROCESS2).click()
+        self.element_is_visible(user.ALL_STATUS2).click()
+        self.element_is_visible(user.SAVE).click()
+
+    def off_visible(self):  # 2. Скрытие столбцов через права
+        self.autorization()
+        self.element_is_visible(user.EDIT_ADDITIONAL).click()
+        self.element_is_visible(user.THE_RIGHT).click()
+        self.element_is_visible(user.SEES).click()
+        self.element_is_visible(user.ALL_FIELDS).click()
+        self.element_is_visible(user.FIND_ELEMENT).click()
+        self.element_is_visible(user.ALL_CHOICE).click()
+        self.element_is_visible(user.MANY_STRING).click()
+        self.element_is_visible(user.INTENGER).click()
+        self.element_is_visible(user.OK).click()
+        self.element_is_visible(user.SAVE).click()
+
+    def delete_right(self):  # 3. Удаление прав
+        self.autorization()
+        self.element_is_visible(user.EDIT_ADDITIONAL).click()
+        self.element_is_visible(user.THE_RIGHT).click()
+        self.element_is_visible(user.EDITS).click()
+        self.element_is_visible(user.ADD_FIELD).click()
+        self.element_is_visible(user.EDITS_EDIT).click()
+        self.element_is_visible(user.DRAFT).click()
+        self.element_is_visible(user.READY).click()
+        self.element_is_visible(user.READY).click()
+        self.element_is_visible(user.CONFIRM).click()
+        self.element_is_visible(user.CONFIRM).click()
+        self.element_is_visible(user.SAVE_EDIT).click()
+        self.element_is_visible(user.SAVE).click()
+
+
+
+
+
+
+
+
+
 
 
 
