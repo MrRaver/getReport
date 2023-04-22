@@ -9,6 +9,7 @@ class TestRoleUser:
         user = User(driver, "http://193.124.117.158/#/login")
         user.open()
         user.create_role_GR1_GR2()
+        time.sleep(4)
 
     def test_create_user_GR1_GR2(self, driver):  # 2.Создание пользователя
         user = User(driver, "http://193.124.117.158/#/login")
@@ -75,3 +76,16 @@ class TestRoleUser:
         user.open()
         user.role2_inheritance()
         time.sleep(3)
+    def test_give_rigth(self,driver): #1. Выдача прав пользователям
+        user = User(driver, "http://193.124.117.158/#/login")
+        user.open()
+        user.give_rigth()
+
+    def test_off_visible(self,driver):  # 2. Скрытие столбцов через права
+        user = User(driver, "http://193.124.117.158/#/login")
+        user.open()
+        user.off_visible()
+    def test_delete_right(self,driver):  # 3. Удаление прав
+        user = User(driver, "http://193.124.117.158/#/login")
+        user.open()
+        user.delete_right()
